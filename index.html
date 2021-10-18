@@ -6,35 +6,44 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Midas un poquito</title>
     <link rel="stylesheet" href="./styles/style.css">
+    <link rel="stylesheet" href="./styles/home.css">
     <link rel="shortcut icon" href="./assets/favicon.png" type="favicon">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap" rel="stylesheet">
 </head>
 <body>
 
     <header>
         <div id="divLogotipo">
-            <a href="./index.html"><img src="./assets/logo_midas.png" alt="logoMidas" class="logoMidas" width="300px"></a>
+            <a href="./index.html"><img src="./assets/logo_midas.png" alt="logoMidas" class="logoMidas"></a>
         </div>
-    
-        <div id="divMenu">
-            <nav id="navMenu">
-                <a href=""><img src="./assets/inicioSesion.png" alt="inicioSesion" class="inicioSesion" width="200px">Tu cuenta</a>
-            </nav>
+
+        <div id="divTuCuenta">
+            <a href=""><img src="./assets/inicioSesion.png" alt="inicioSesion" class="inicioSesion">Tu cuenta</a>
         </div>
     </header>
 
 
     <section>
-        <div id="divServicios">
-            <nav class="navServicios">
-                <a href="./pages/mecanicaGeneral.html" class="ocultar">Mecánica general</a>
-                <a href="./pages/chapaPintura.html">Chapa y pintura</a>
-                <a href="./pages/cristalesLunas.html">Cristales y lunas</a>
-            </nav>
-        </div>
-    
+
         <div id="divAnuncioHome">
             <img src="./assets/midasAd.png" alt="anuncioHome" class="anuncioHome">
         </div>
+
+        <div id="divServicios">
+            <div id="divMecanicaGeneral">
+                <a href="./pages/mecanicaGeneral.html">Mecánica general</a>
+            </div>
+
+            <div id="divChapaYPintura">
+                <a href="./pages/chapaPintura.html">Chapa y pintura</a>
+            </div>
+
+            <div id="divCristalesYLunas">
+                <a href="./pages/cristalesLunas.html">Cristales y lunas</a>
+            </div>
+        </div>
+
     </section>
 
     <footer>
