@@ -6,16 +6,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Chapa y Pintura</title>
     <link rel="stylesheet" href="../styles/style.css">
+    <link rel="stylesheet" href="../styles/styleServicios.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap" rel="stylesheet">
     <script defer src="../scripts/script.js"></script>
 </head>
 <body>
     
-    <header>
-        <img src="../assets/chapaypintura.jpg" alt="ChapaYpintura" width="700px" height="400px">
-    </header>
-
+    
     <main>
         <section id="descripcion">
+            <img src="../assets/chapaypintura.jpg" alt="ChapaYpintura" width="700px" height="400px">
             <h2>Nuestro compromiso con el medio ambiente es firme, ya que utilizamos para el pintado de vehículos productos activos según normativa medioambiental vigente.</h2>
             
             <form id="formulario">
@@ -40,11 +42,14 @@
                 </datalist>
                 <label for="pedirFecha">Elige fecha y hora</label>
                 <input type="datetime-local" name="pedirFecha" id="pedirFecha">
-                <input type="button" name="citaPrevia" class="citaPrevia" value="Pida cita">
+                <input type="button" name="citaPrevia" class="citaPrevia" value="Pida cita" onclick="pedirCita()">
             </form>
 
         </section>
+        <section id="TercerFormulario">
 
+        </section>
+        <section id="RegistroTres"></section>
     </main>
 
 </body>
