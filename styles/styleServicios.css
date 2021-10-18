@@ -1,0 +1,31 @@
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+img {
+    background-image: src="../assets/chapaypintura.jpg";
+    border: solid #ffe600;
+    border-width: 20px;
+    border-radius: 5px;
+    width: 97%;
+    height: 10%;
+}
+h2 {
+    margin-left: 10px;
+    font-size: 30px;
+    color: rgb(19, 19, 19);
+}
+
+input {
+    border-radius: 3px;
+    font-size: 20px;
+    color: rgb(19, 19, 19);
+}
+label {
+    color: rgb(44, 44, 44);
+    font-size: 20px;
+}
+
+form {
+    margin: 45px;
+}
