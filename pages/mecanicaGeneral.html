@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mecanica general</title>
+    <link rel="stylesheet" href="../styles/style.css">
+</head>
+<body>
+    <section id="imagenMecanica">
+        <img src="../assets/img/midas-3mecanico-capo_1200x360_IWMq8B9OebeSWMzElZYf1.webp" alt="ilustracion taller">
+        <h2>En nuestro taller cubrimos todas la averías y servicios que pueda necesitar tu vehículo. 
+            Selecciona el servicio y pide cita, si no sabes cuál es el problema seleccione "No lo sé/otros"
+        </h2>
+
+        <form id="formulario">
+            <h3>¿Tienes alguna duda?</h3>
+            <label for="duda">Contactenos:</label>
+            <input type="tel" name="duda" id="duda" placeholder="Número de teléfono">
+            <input type="button" name="submit" id="submit" value="Enviar" onclick="mensaje()"><br><br>
+        </form>
+
+        <form action="">
+            <label for="mecanicaGeneral">Selecciona subservicio:</label>
+            <input list="mecanicaGeneral" nombre="servicios">
+            <datalist id="mecanicaGeneral">
+                <option value="Amortiguación"></option>
+                <option value="Aceite"></option>
+                <option value="Dirección"></option>
+                <option value="Frenos"></option>
+                <option value="Luces">Luces</option>
+                <option value="No lo sé/otros"></option>
+                <option value="Revisión general"></option>
+            </datalist>
+            
+            <input type="datetime-local">   
+            <input type="button" class="citaPrevia" value="Pida cita">
+                
+
+        </form>
+    </section>
+    <script src="../scripts/script.js"></script>
+</body>
+</html>
