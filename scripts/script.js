@@ -6,26 +6,25 @@ const mensaje = () => {
     document.getElementById('formulario').appendChild(p);
 }
 
-// INICIO DE SESION
+// INICIO DE SESION Y REGISTRO
 let CONTADOR = 0;
 let CONTADOR2 = 0;
 const pedirCita = () => {
     if (CONTADOR == 0){
         CONTADOR++
         let temp = document.createElement('section');
-            temp.setAttribute('id', 'formularioSesion');
-            temp.innerHTML = `
-            <form id="inicioSesion">
-                <h2>Inicia sesion</h2>
-                <label for="registro">¿No tienes cuenta?</label>
-                <input type="button" id="registro" value="Creala aquí" onclick="crearCuenta()"><br><br>
-                <label for="name">Escriba su nombre de usuario</label><br>
-                <input type="text" id="name" required><br>
-                <label for="pssword">Escriba su contraseña</label><br>
-                <input type="password" id="pssword" required><br><br>
-                <button id="inicio">Entrar</button>
-            </form>
-            `;
+        temp.setAttribute('id', 'formularioSesion');
+        temp.innerHTML = `
+        <form id="inicioSesion">
+            <h2><u>Inicia sesion</u></h2>
+            <label for="registro">¿No tienes cuenta?<input type="button" id="registro" value="Creala aquí" onclick="crearCuenta()"></label><br>
+            <label for="name">Escriba su nombre de usuario</label>
+            <input type="text" id="name" required>
+            <label for="pssword">Escriba su contraseña</label>
+            <input type="password" id="pssword" required><br>
+            <button id="inicio">Entrar</button>
+        </form>
+        `;
         if (document.getElementById('imagenMecanica')) {
             document.getElementById('PrimerFormulario').appendChild(temp);
             eliminarElementoMecanica();
@@ -56,7 +55,7 @@ const crearCuenta = () => {
         cuenta.getAttribute('id', 'cuenta');
         cuenta.innerHTML = `
         <form id="registrate">
-            <h2>Registrate</h2>
+            <h2><u>Registrate</u></h2>
             <label for="name">Registre su nombre de usuario</label><br>
             <input type="text" id="name" required><br>
             <label for="email">Correo electrónico</label><br>
