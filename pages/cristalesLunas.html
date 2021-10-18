@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cristales/lunas</title>
+    <link rel="stylesheet" href="../styles/style.css">
+</head>
+
+<body>
+<img src="../assets/img/bannersvisioncare_web_foto_1200x360_con-cuadros_IX_AV19kdt0P2fqYIHj5q.webp" alt="">
+
+    <form id="formulario">
+        <h3>¿Tienes alguna duda?</h3>
+        <label for="duda">Contactenos:</label>
+        <input type="tel" name="duda" id="duda" placeholder="Número de teléfono">
+        <input type="button" name="submit" id="submit" value="Enviar" onclick="mensaje()"><br><br>
+    </form>
+
+    <form action="">
+        <label for="CristalLuna">Selecciona subservicio:</label>
+        <input list="CristalLuna" nombre="servicios">
+        <datalist id="CristalLuna">
+            <option value="Reparar"></option>
+            <option value="Cambiar"></option>
+        </datalist>
+            
+        <input type="datetime-local">   
+        <input type="button" class="citaPrevia" value="Pida cita">
+
+<script src="../scripts/script.js"></script>
+</body>
+</html>
