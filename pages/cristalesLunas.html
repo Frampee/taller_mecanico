@@ -9,26 +9,32 @@
 </head>
 
 <body>
-<img src="../assets/img/bannersvisioncare_web_foto_1200x360_con-cuadros_IX_AV19kdt0P2fqYIHj5q.webp" alt="">
+    <section id="cristalesLuna">
+        <img src="../assets/img/bannersvisioncare_web_foto_1200x360_con-cuadros_IX_AV19kdt0P2fqYIHj5q.webp" alt="">
+        <h2>Reparamos los cristales de tu coche o cambiamos la luna en tiempo record. Selecciona tu opción.</h2>
+        <form id="formulario">
+            <h3>¿Tienes alguna duda?</h3>
+            <label for="duda">Contactenos:</label>
+            <input type="tel" name="duda" id="duda" placeholder="Número de teléfono">
+            <input type="button" name="submit" id="submit" value="Enviar" onclick="mensaje()"><br><br>
+        </form>
 
-    <form id="formulario">
-        <h3>¿Tienes alguna duda?</h3>
-        <label for="duda">Contactenos:</label>
-        <input type="tel" name="duda" id="duda" placeholder="Número de teléfono">
-        <input type="button" name="submit" id="submit" value="Enviar" onclick="mensaje()"><br><br>
-    </form>
+        <form action="">
+            <label for="CristalLuna">Selecciona subservicio:</label>
+            <input list="CristalLuna" nombre="servicios">
+            <datalist id="CristalLuna">
+                <option value="Reparar"></option>
+                <option value="Cambiar"></option>
+            </datalist>
+                
+            <input type="datetime-local">   
+            <input type="button" class="citaPrevia" value="Pida cita" onclick="pedirCita()">
+    </section>
+    <section id="SegundoFormulario">
 
-    <form action="">
-        <label for="CristalLuna">Selecciona subservicio:</label>
-        <input list="CristalLuna" nombre="servicios">
-        <datalist id="CristalLuna">
-            <option value="Reparar"></option>
-            <option value="Cambiar"></option>
-        </datalist>
-            
-        <input type="datetime-local">   
-        <input type="button" class="citaPrevia" value="Pida cita">
+    </section>
 
+    <section id="RegistroDos"></section>
 <script src="../scripts/script.js"></script>
 </body>
 </html>
