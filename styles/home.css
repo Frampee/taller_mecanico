@@ -1,0 +1,68 @@
+/* HOME */
+
+body{
+    margin: 0;
+}
+
+.anuncioHome{
+    width: 100%;
+}
+
+#divServicios{
+    width:100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    font-size: 20px;
+    font-family: 'Poppins', sans-serif;
+}
+
+#divServicios a{
+    text-decoration: none;
+    color: inherit;
+}
+
+#divMecanicaGeneral{
+    width: 400px;
+    height: 400px;
+    margin: 30px 30px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    background-color:rgb(248, 248, 245);
+    box-shadow: 0 -5px #ffe600;
+}
+
+#divMecanicaGeneral:hover{
+    font-size: 30px;
+}
+
+#divChapaYPintura{
+    width: 400px;
+    height: 400px;
+    margin: 30px 30px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    background-color:rgb(248, 248, 245);
+    box-shadow: 0 -5px #ffe600;
+}
+
+#divChapaYPintura:hover{
+    font-size: 30px;
+}
+
+#divCristalesYLunas{
+    width: 400px;
+    height: 400px;
+    margin: 30px 30px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    background-color:rgb(248, 248, 245);
+    box-shadow: 0 -5px #ffe600;
+}
+
+#divCristalesYLunas:hover{
+    font-size: 30px;
+}
