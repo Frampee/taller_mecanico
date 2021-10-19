@@ -22,7 +22,7 @@ const pedirCita = () => {
             <input type="text" id="name" required>
             <label for="pssword">Escriba su contraseña</label>
             <input type="password" id="pssword" required><br>
-            <button id="inicio">Entrar</button>
+            <input type="button" id="inicio" value="Entrar" onclick="inicioDeSesion()">
         </form>
         `;
         if (document.getElementById('imagenMecanica')) {
@@ -62,8 +62,7 @@ const crearCuenta = () => {
             <input type="email" id="email" required><br>
             <label for="pssword">Elija su contraseña</label><br>
             <input type="password" id="pssword" required><br><br>
-            <button id="registro">Registrar</button>
-    
+            <input type="button" id="registro" value="Registrar" onclick="registrarNuevoUsuario()">
         </form>
         `
         if (document.getElementById('PrimerFormulario')) {
@@ -87,4 +86,29 @@ const eliminarElementoSegundoForm = () => {
 }
 const eliminarElementoCTercerForm = () => {
     document.getElementById('TercerFormulario').remove();
+}
+
+const registrarNuevoUsuario = () => {
+    let key = document.getElementById('name').value;
+    let password = document.getElementById('pssword').value;
+    localStorage.setItem(key, password);
+    let sacarItem = localStorage.getItem(key);
+    if (sacarItem) {
+        alert("El usuario ha sido creado");
+    }
+}
+
+const inicioDeSesion = () => {
+    let userName = document.getElementById('name').value;
+    let userPass = document.getElementById('pssword').value;
+    let cuenta = localStorage.getItem(userName);
+    if (cuenta){
+        if(userPass == cuenta){
+            alert("Bienvenido");
+        } else {
+            alert("Contraseña incorrecta");
+        }
+    } else {
+        alert("Usuario no existente, registrese");
+    }
 }
