@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chapa y Pintura</title>
+    <link rel="stylesheet" href="../styles/style.css">
+    <link rel="stylesheet" href="../styles/styleServicios.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap" rel="stylesheet">
+    <script defer src="../scripts/script.js"></script>
+</head>
+<body>
+    
+    
+    <main>
+        <section id="descripcion">
+            <img src="../assets/chapaypintura 1200360.jpg" alt="ChapaYpintura">
+            <h2>Nuestro compromiso con el medio ambiente es firme, ya que utilizamos para el pintado de vehículos productos activos según normativa medioambiental vigente.</h2>
+            
+            <form id="formulario">
+                <h3>¿Tienes alguna duda?</h3>
+                <label for="duda">Contactenos:</label>
+                <input type="tel" name="duda" id="duda" placeholder="Número de teléfono">
+                <input type="button" name="submit" id="submit" value="Enviar" onclick="mensaje()"><br><br>
+            </form>
+            
+            <form id="pedirCita">
+                <label for="chapaypintura">¿Que problema tienes?</label>
+                <input list="chapaypinturaCoche" name="chapaypintura" id="chapaypintura">
+                <datalist id="chapaypinturaCoche">
+                    <option value="Parachoques"></option>
+                    <option value="Capó"></option>
+                    <option value="Aleta"></option>
+                    <option value="Espejo retrovisor"></option>
+                    <option value="Puerta"></option>
+                    <option value="Techo"></option>
+                    <option value="Maletero"></option>
+                    <option value="Coche entero"></option>
+                </datalist>
+                <label for="pedirFecha">Elige fecha y hora</label>
+                <input type="datetime-local" name="pedirFecha" id="pedirFecha">
+                <input type="button" name="citaPrevia" class="citaPrevia" value="Pida cita" onclick="pedirCita()">
+            </form>
+
+        </section>
+        <section id="TercerFormulario">
+
+        </section>
+        <section id="RegistroTres"></section>
+    </main>
+
+</body>
+</html>
